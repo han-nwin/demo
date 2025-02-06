@@ -87,14 +87,19 @@ header div {
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  animation: logo-spin 10s linear infinite; /* Apply the animation */
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em var(--blue));
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em var(--lavender));
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 /* Card styling for sections */
 .card {
   padding: 2rem;
@@ -184,3 +189,4 @@ li {
     width: 100%;
   }
 }
+
