@@ -35,7 +35,7 @@ function Counter() {
     <div>
       <h3>Counter Example</h3>
       <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count + 2)}>Increment</button>
     </div>
   )
 
